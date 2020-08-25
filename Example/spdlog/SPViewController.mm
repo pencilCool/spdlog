@@ -7,7 +7,7 @@
 //
 
 #import "SPViewController.h"
-
+#include <spdlog/spdlog.h>
 @interface SPViewController ()
 
 @end
