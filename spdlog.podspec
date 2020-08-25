@@ -35,12 +35,9 @@ Pod::Spec.new do |spec|
   spec.osx.deployment_target = "10.7"
 
   spec.source       = { :git => "git@git.n.xiaomi.com:miot-sdk/cppmiotsdk.git", :tag => "#{spec.version}" }
-
   spec.source_files  = 'spdlog/**/**.{h,m,hpp,cpp}'
   spec.header_mappings_dir = 'spdlog'
-  # spec.pod_target_xcconfig = { 
-  #   'GCC_PREPROCESSOR_DEFINITIONS' => 'RXCPP_LITE'
-  #  }
-  
+  spec.libraries = 'c++'
+   
 
 end
