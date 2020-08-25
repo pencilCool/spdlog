@@ -1,0 +1,1 @@
+../../../../../../spdlog/sinks/android_sink.h

@@ -1,0 +1,16 @@
+PODS:
+  - spdlog (0.0.1)
+
+DEPENDENCIES:
+  - spdlog (from `../`)
+
+EXTERNAL SOURCES:
+  spdlog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  spdlog: 593116183ad49b0caca0af41a65d68806746a3e8
+
+PODFILE CHECKSUM: 1625cfb1519f7614a5897d7f65b31230bc9f6eb3
+
+COCOAPODS: 1.6.1

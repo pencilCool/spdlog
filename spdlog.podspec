@@ -1,42 +1,46 @@
 #
-# Be sure to run `pod lib lint spdlog.podspec' to ensure this is a
-# valid spec before submitting.
+#  Be sure to run `pod spec lint spdlog.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'spdlog'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of spdlog.'
+Pod::Spec.new do |spec|
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  spec.name         = "spdlog"
+  spec.version      = "0.0.1"
+  spec.summary      = "A short description of spdlog."
 
-  s.homepage         = 'https://github.com/pencilCool/spdlog'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pencilCool' => 'yhtangcoder@gmail.com' }
-  s.source           = { :git => 'https://github.com/pencilCool/spdlog.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.description  = <<-DESC
+          spdlog podspec
 
-  s.ios.deployment_target = '8.0'
+                   DESC
 
-  s.source_files = 'spdlog/Classes/**/*'
+  spec.homepage     = "http://EXAMPLE/spdlog"
+  spec.author             = { "pencilCool" => "yhtangcoder@gmail.com" }
+  spec.ios.deployment_target = "8.0"
+  spec.osx.deployment_target = "10.7"
+
+  spec.source       = { :git => "git@git.n.xiaomi.com:miot-sdk/cppmiotsdk.git", :tag => "#{spec.version}" }
+
+  spec.source_files  = 'spdlog/**/**.{h,m,hpp,cpp}'
+  spec.header_mappings_dir = 'spdlog'
+  # spec.pod_target_xcconfig = { 
+  #   'GCC_PREPROCESSOR_DEFINITIONS' => 'RXCPP_LITE'
+  #  }
   
-  # s.resource_bundles = {
-  #   'spdlog' => ['spdlog/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
